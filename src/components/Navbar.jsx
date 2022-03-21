@@ -51,7 +51,7 @@ const Navbar = () => {
                   Todos
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/account"
                   aria-label="About us"
@@ -60,7 +60,7 @@ const Navbar = () => {
                 >
                   Account
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="/"
