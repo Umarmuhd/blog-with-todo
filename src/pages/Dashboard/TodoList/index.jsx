@@ -133,7 +133,13 @@ export default function TodoList() {
               todos.length > 0 &&
               todos.map((todo) => (
                 <div key={todo.id} className="flex mb-4 items-center">
-                  <p className="w-full text-grey-darkest">{todo.title}</p>
+                  <p
+                    className={`w-full text-grey-darkest  ${
+                      todo.status === "completed" && " line-through"
+                    }`}
+                  >
+                    {todo.title}
+                  </p>
 
                   {todo.status === "pending" ? (
                     <button
