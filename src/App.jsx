@@ -18,7 +18,7 @@ function App() {
 
         <Route element={<ProtectedRoutes />}>
           <Route path="/todos" element={<TodoList />} />
-          <Route path="/account" element={<Account />} />
+          <Route path="/account/:id" element={<Account />} />
         </Route>
       </Routes>
     </Router>

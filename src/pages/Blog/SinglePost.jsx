@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import axios from "../../axios";
 
@@ -68,14 +68,14 @@ const SinglePost = () => {
                 />
               </a>
               <div>
-                <a
-                  href="/"
+                <Link
+                  to={`/account/${post.user_id}`}
                   aria-label="Author"
                   title="Author"
                   className="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400"
                 >
                   Vasile Melinte
-                </a>
+                </Link>
                 <p className="text-sm font-medium leading-4 text-gray-600">
                   Author
                 </p>
